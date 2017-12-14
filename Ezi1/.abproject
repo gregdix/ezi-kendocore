@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Ezi1",
+  "ProjectGuid": "4bbf24e2-1c7f-4423-9c3c-4f28f716fe63",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Ezi1",
+  "DisplayName": "Ezi1",
+  "Author": "",
+  "Description": "Ezi1",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "6.4.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{8dc6ca91-0cbd-4f6e-9ce3-e012278bba62}",
+  "WP8ProductID": "{3d245591-c2d6-4ac2-a343-bd013a357fd0}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Ezi1",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
