@@ -2,13 +2,23 @@
   "_app": {
     "navigationMore": "More",
     "showMoreTitle": "Show More",
+    "registerTitle": "Register",
     "qrCodeScan": "Scan"
   },
   "homeView": {
-    "title": "Home View"
+    "title": "Home"
   },
   "settingsView": {
-    "title": "Settings"
+    "title": "Menu"
+  },
+  "wifiView": {
+    "title": "Wifi"
+  },
+  "profileView": {
+    "title": "Profile"
+  },
+ "weatherView": {
+    "title": "Weather"
   },
   "contactsView": {
     "title": "Contacts"

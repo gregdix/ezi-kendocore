@@ -14,12 +14,16 @@
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="app.js"></script>
+     <script src="kendo/js/console.js"></script>
 </head>
 
 <body id="kendoUiMobileApp">
     <script src="components/contactsView/index.js"></script>
     <script src="components/settingsView/index.js"></script>
     <script src="components/homeView/index.js"></script>
+    <script src="components/profileView/index.js"></script>
+    <script src="components/weatherView/index.js"></script>
+    <script src="components/wifiView/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
@@ -29,8 +33,9 @@
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
                 <a href="components/homeView/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.homeView.title"></span></a>
-                <a href="components/settingsView/view.html" data-icon="settings"><span class="navigation-link-text" data-bind="text: strings.settingsView.title"></span></a>
-                <a href="components/contactsView/view.html" data-icon="contacts"><span class="navigation-link-text" data-bind="text: strings.contactsView.title"></span></a>
+                <a href="components/wifiView/view.html" data-icon="wifi"><span class="navigation-link-text" data-bind="text: strings.wifiView.title"></span></a>
+                <a href="components/profileView/view.html" data-icon="contacts"><span class="navigation-link-text" data-bind="text: strings.profileView.title"></span></a>
+                <a href="components/settingsView/view.html" data-icon="more"><span class="navigation-link-text">More</span></a>
             </div>
             <div id="navigation-container-more" style="display: none">
             </div>
@@ -46,7 +51,7 @@
         </header>
         <ul data-role="listview" data-style="inset" data-click="app.listViewClick">
         </ul>
-    </div>
+    </div>      
 
     <div data-role="layout" data-id="main-nonav">
         <header data-role="header">
@@ -62,7 +67,12 @@
 
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
+   <script>
+    function logClick(e) {
+        kendoConsole.log(this.element.prop("id") + " was clicked!", false, "#button-events");
+    }
+</script>
+     
     <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
 </body>
 

@@ -1,0 +1,166 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.profileView" data-show="app.profileView.onShow" data-after-show="app.profileView.afterShow" id="profileViewScreen" class="screen" data-persist="true" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.profileView.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_profileView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    
+  <!--  <div class="action-buttons">
+        <a href="#view-transitions-login" class="km-justified km-primary" data-role="button" class="transitions-button">Login/Sign-up</a>
+    </div>-->
+    
+
+    
+    
+    <ul data-role="listview" data-style="inset">
+        <li><label for="username">Username: <input type="text" id="username" /></label></li>
+        <li><label for="password">Password: <input type="password" id="password" /></label></li>
+    </ul>
+    
+    <div class="action-buttons">
+        <a href="#components/homeView/view.html"  data-role="button" class="km-primary km-justified transitions-button">Login</a><br />
+        <a href="#components/homeView/view.html"  data-role="button" class="km-justified transitions-cancel">Cancel</a>
+    </div>
+    <div class="action-buttons">
+     <a href="#register-view"  data-role="button" class="km-justified transitions-button">Register</a>
+    
+    </div>
+
+
+
+
+<style type="text/css" media="screen">
+h1.app-logo {
+    margin: 3em 0;
+    font-size: 3em;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: .9em;
+}
+.action-buttons {
+    margin: 1em;
+}
+#view-transitions-login .km-back {
+    display: none;
+}
+</style>
+    <!-- END_CUSTOM_CODE_profileView -->
+</div>
+<!-- registerView -->
+<div id="register-view" data-role="view" data-title="Register" data-layout="main">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-bind="text: strings._app.registerTitle">Register</span>
+            </div>
+        </header>
+        <div class="km-group-title">
+            <div class="km-text">Registration Form</div>
+           </div>
+        <ul data-role="listview" data-style="inset" data-click="app.listViewClick">
+        </ul>
+         
+       <!--<ul data-role="listview" data-style="inset">
+        <li><label for="name">Name: <input type="text" id="name" /></label></li>
+        <li><label for="surname">Surname: <input type="text" id="surname" /></label></li>
+        <li><label for="email">Email: <input type="email" id="email" /></label></li>
+        <li><label for="mobile">Mobile: <input type="text" id="mobile" /></label></li>
+        <li><label for="password">Password: <input type="password" id="password" /></label></li>
+        <li><label for="repeatpassword">Repeat Password: <input type="password" id="repeatpassword" /></label></li>
+       </ul>-->
+       
+        
+        <ul data-role="listview" data-style="inset" class="km-widget km-listview km-list km-listinset" style="touch-action: pan-y;">
+            <li>
+                <label class="km-required km-label-above">First Name
+                    <input value="" type="text"  id="name">
+                </label>
+            </li>
+            <li>
+                <label class="km-label-above">Last Name
+                    <input value="" type="text"  id="lastname">
+                </label>
+            </li>
+             <li>
+                <label class="km-label-above">Mobile Number
+                    <input value="" type="tel"  id="mobile">
+                </label>
+            </li>
+                        
+            <!--<li>
+                <fieldset>
+                    <legend><a href="#" class="km-legend-button">+ Mobile</a></legend>
+                        <label class="km-inline-field km-label-above km-required" style="width: 45%;">
+                        Mobile Number
+                        <input type="text" value="">
+                        </label>
+                        <label class="km-inline-field km-label-above" style="width: 45%;">
+                            Type
+                            <select id="phone-type">
+                                <option value="First Option">Mobile</option>
+                                <option value="Second Option">Stationary</option>
+                                <option value="Third Option">iPhone</option>
+                            </select>
+                      </label>  
+                </fieldset>                   
+            </li>-->
+            <li>
+                 <label class="km-label-above">Email
+                    <input value="" type="email"  id="mobile">
+                </label>
+            </li>
+             <li>
+                <label class="km-label-above">Password
+                    <input value="" type="password"  id="pass">
+                </label>
+            </li>
+            <li>
+                <label class="km-label-above">Renter Password
+                    <input value="" type="password"  id="pass2">
+                </label>
+            </li>
+            <li>
+                <label style="font-size: .72em;">
+                    Date of Birth
+                    <input type="date" value="2012-03-22">
+                </label>
+            </li>
+          <!-- <li>
+                    <label class="km-icon-label k-i-clock">
+                        <select id="dropdown">
+                            <option value="First Option">Meeting Room 1</option>
+                            <option value="Second Option">Meeting Room 2</option>
+                            <option value="Third Option">Meeting 3</option>
+                        </select>
+                    </label>
+                </li>-->
+                                
+        </ul>
+        
+        <div style="border-bottom: 1px solid #dfe1e2; padding-bottom: 10px;display: inline-flex;width: 100%;">
+                <input type="radio" class="km-radio" name="sex" id="sex1" checked="checked">
+                <label class="km-radio-label" for="sex1">Male</label>
+                <input type="radio" class="km-radio" name="sex" id="sex2">
+                <label class="km-radio-label" for="sex2">Female</label>
+             </div>
+        
+       <div style="border-bottom: 0px solid #ccc; padding-bottom: 30px;">
+        <input type="checkbox" class="km-checkbox" id="chocolate">
+        <label class="km-checkbox-label" for="chocolate">I Accept The T&C's</label>
+        
+       </div>
+       <div class="action-buttons" id="button-events" data-title="Button Events">
+        <a  data-role="button" id="register"  data-click="logClick" class="km-primary km-justified transitions-button">Submit</a><br />
+        <a href="#components/profileView/view.html"  data-role="button" class="km-justified transitions-cancel">Cancel</a>
+       <div class="console"></div>
+           
+       </div>
+         
+    </div>
+<!-- END of registerView -->

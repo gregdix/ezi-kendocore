@@ -1,0 +1,35 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.weatherView" data-show="app.weatherView.onShow" data-after-show="app.weatherView.afterShow" id="weatherViewScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.weatherView.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_contactsView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    
+    
+     <!--Weather View-->
+    
+
+        <ul data-role="listview" data-style="inset"
+            data-bind="source: WeatherdataSource"
+            data-template="weatherTemplate">
+        </ul>
+   
+     <!--Weather forecast template-->
+    <script id="weatherTemplate" type="text/x-kendo-tmpl">
+        <div class="w-item-template">
+            <span style="margin-right: 10px;" class="w-icon #: data.image #"></span>
+            <h4 class="w-date">#: data.day #</h4>
+            <div class="w-temp">
+                <span>#: data.highTemperature #<sup>&deg;</sup></span>
+                <span>#: data.lowTemperature #<sup>&deg;</sup></span>
+            </div>
+        </div>
+    </script>
+    <!-- END_CUSTOM_CODE_contactsView -->
+</div>

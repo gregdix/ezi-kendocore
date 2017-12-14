@@ -19,6 +19,30 @@
     },
     {
       "type": "kendo-ui-mobile:view",
+      "name": "profileView",
+      "components": [],
+      "title": "Profile",
+      "addToNavigation": true,
+      "icon": "contacts"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "wifiView",
+      "components": [],
+      "title": "Wifi",
+      "addToNavigation": true,
+      "icon": "wifi"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "weatherView",
+      "components": [],
+      "title": "Weather",
+      "addToNavigation": true,
+      "icon": "globe"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
       "name": "contactsView",
       "components": [],
       "title": "Contacts",

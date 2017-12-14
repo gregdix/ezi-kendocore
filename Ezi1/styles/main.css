@@ -729,6 +729,38 @@ Fields
     height: 2em;
 }
 
+/* WEATHER VIEW STYLES */
+.w-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url(../styles/images/sprite-weather.png);
+    background-repeat: no-repeat;
+}
+.w-icon.sunny { background-position: 0px 0px; }
+.w-icon.cloudy { background-position: 0px -32px; }
+.w-icon.partly-cloudy { background-position: 0px -64px; }
+.w-icon.partly-sunny { background-position: 0px -96px; }
+.w-icon.shower { background-position: 0px -128px; }
+.w-icon.foggy { background-position: 0px -160px; }
+.w-icon.storm { background-position: 0px -192px; }
+
+.w-item-template:after {
+    clear: both;
+}
+.w-item-template > .w-icon {
+    float: left;
+}
+.w-item-template > .w-date {
+    float: left;
+    margin: 0.5em 0 0 1em;
+}
+.w-item-template > .w-temp {
+    float: right;
+    margin-top: 0.2em;
+}
+.w-item-template > .w-temp > span:last-of-type {
+    opacity: 0.5;
+}
 
 /* End Grid columns */
 

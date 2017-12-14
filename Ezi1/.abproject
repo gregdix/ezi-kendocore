@@ -66,5 +66,8 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "iOSDeploymentTarget": "6.0"
+  "iOSDeploymentTarget": "6.0",
+  "CorePlugins": [
+    "com.phonegap.plugins.sqlite@1.1.0"
+  ]
 }
