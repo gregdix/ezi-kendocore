@@ -1,5 +1,8 @@
 {
   "CorePlugins": [
+    "com.bit6.sdk@0.11.0",
+    "com.phonegap.plugins.PushPlugin@3.3.0",
+    "cordova-plugin-admobpro@2.9.9",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
     "cordova-plugin-contacts",
@@ -13,12 +16,14 @@
     "cordova-plugin-geolocation",
     "cordova-plugin-globalization",
     "cordova-plugin-inappbrowser",
+    "cordova-plugin-iosrtc@3.2.2",
     "cordova-plugin-media",
     "cordova-plugin-media-capture",
     "cordova-plugin-network-information",
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
     "cordova-plugin-vibration",
-    "cordova-plugin-whitelist"
+    "cordova-plugin-whitelist",
+    "cordova-plugin-wkwebview-engine@1.1.1"
   ]
 }

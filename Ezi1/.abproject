@@ -12,7 +12,11 @@
     "1",
     "2"
   ],
-  "iOSBackgroundMode": [],
+  "iOSBackgroundMode": [
+    "audio",
+    "location",
+    "remote-notification"
+  ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "6.4.0",
   "AndroidPermissions": [
@@ -34,6 +38,8 @@
     "android.permission.SEND_SMS",
     "android.permission.USE_SIP",
     "android.permission.VIBRATE",
+    "android.permission.WRITE_CALL_LOG",
+    "android.permission.WRITE_CONTACTS",
     "android.permission.WRITE_EXTERNAL_STORAGE",
     "android.permission.WRITE_SMS"
   ],
