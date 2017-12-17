@@ -15,6 +15,9 @@
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="app.js"></script>
      <script src="kendo/js/console.js"></script>
+    <script src="scripts/actionsheet.js"></script>
+    <script src="MacAddressPlugin/www/MacAddress.js"></script>
+    
 </head>
 
 <body id="kendoUiMobileApp">
@@ -24,6 +27,11 @@
     <script src="components/profileView/index.js"></script>
     <script src="components/weatherView/index.js"></script>
     <script src="components/wifiView/index.js"></script>
+    <script src="components/twitterView/index.js"></script>
+    <script src="components/mapView/index.js"></script>
+    <script src="components/mediaView/index.js"></script>
+    <script src="components/remoteView/index.js"></script>
+    
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
@@ -53,6 +61,135 @@
         </ul>
     </div>      
 
+     <!--Demo View-->
+    <div id="tabstrip-demo" data-role="view" data-title="Plugin Demo" data-model="app.demoService.viewModel" data-layout="main">
+        <header data-role="header">
+            <div style id="eventlog" class="km-text">-</div>
+        </header>
+        <div class="demo">
+            
+            <br/>
+            <button data-role="button" class="button" data-bind="click: share">Sharing an image</button><br/>
+            <button data-role="button" class="button" data-bind="click: delete">Deleting an item</button><br/>
+            <button data-role="button" class="button" data-bind="click: logout">Logout confirmation</button><br/>
+            <button data-role="button" class="button" data-bind="click: showspec">Device info</button>
+        </div>
+        
+    </div>
+    
+    <!-- registerView -->
+<div id="register-view" data-role="view" data-title="Register" data-layout="main">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-bind="text: strings._app.registerTitle">Register</span>
+            </div>
+        </header>
+        <div class="km-group-title">
+            <div class="km-text">Registration Form</div>
+           </div>
+        <ul data-role="listview" data-style="inset" data-click="app.listViewClick">
+        </ul>
+         
+       <!--<ul data-role="listview" data-style="inset">
+        <li><label for="name">Name: <input type="text" id="name" /></label></li>
+        <li><label for="surname">Surname: <input type="text" id="surname" /></label></li>
+        <li><label for="email">Email: <input type="email" id="email" /></label></li>
+        <li><label for="mobile">Mobile: <input type="text" id="mobile" /></label></li>
+        <li><label for="password">Password: <input type="password" id="password" /></label></li>
+        <li><label for="repeatpassword">Repeat Password: <input type="password" id="repeatpassword" /></label></li>
+       </ul>-->
+       
+        
+        <ul data-role="listview" data-style="inset" class="km-widget km-listview km-list km-listinset" style="touch-action: pan-y;">
+            <li>
+                <label class="km-required km-label-above">First Name
+                    <input value="" type="text"  id="name">
+                </label>
+            </li>
+            <li>
+                <label class="km-label-above">Last Name
+                    <input value="" type="text"  id="lastname">
+                </label>
+            </li>
+             <li>
+                <label class="km-label-above">Mobile Number
+                    <input value="" type="tel"  id="mobile">
+                </label>
+            </li>
+                        
+            <!--<li>
+                <fieldset>
+                    <legend><a href="#" class="km-legend-button">+ Mobile</a></legend>
+                        <label class="km-inline-field km-label-above km-required" style="width: 45%;">
+                        Mobile Number
+                        <input type="text" value="">
+                        </label>
+                        <label class="km-inline-field km-label-above" style="width: 45%;">
+                            Type
+                            <select id="phone-type">
+                                <option value="First Option">Mobile</option>
+                                <option value="Second Option">Stationary</option>
+                                <option value="Third Option">iPhone</option>
+                            </select>
+                      </label>  
+                </fieldset>                   
+            </li>-->
+            <li>
+                 <label class="km-label-above">Email
+                    <input value="" type="email"  id="mobile">
+                </label>
+            </li>
+             <li>
+                <label class="km-label-above">Password
+                    <input value="" type="password"  id="pass">
+                </label>
+            </li>
+            <li>
+                <label class="km-label-above">Renter Password
+                    <input value="" type="password"  id="pass2">
+                </label>
+            </li>
+            <li>
+                <label style="font-size: .72em;">
+                    Date of Birth
+                    <input type="date" value="2012-03-22">
+                </label>
+            </li>
+          <!-- <li>
+                    <label class="km-icon-label k-i-clock">
+                        <select id="dropdown">
+                            <option value="First Option">Meeting Room 1</option>
+                            <option value="Second Option">Meeting Room 2</option>
+                            <option value="Third Option">Meeting 3</option>
+                        </select>
+                    </label>
+                </li>-->
+                                
+        </ul>
+        
+        <div style="border-bottom: 1px solid #dfe1e2; padding-bottom: 10px;display: inline-flex;width: 100%;">
+                <input type="radio" class="km-radio" name="sex" id="sex1" checked="checked">
+                <label class="km-radio-label" for="sex1">Male</label>
+                <input type="radio" class="km-radio" name="sex" id="sex2">
+                <label class="km-radio-label" for="sex2">Female</label>
+             </div>
+        
+       <div style="border-bottom: 0px solid #ccc; padding-bottom: 30px;">
+        <input type="checkbox" class="km-checkbox" id="chocolate">
+        <label class="km-checkbox-label" for="chocolate">I Accept The T&C's</label>
+        
+       </div>
+       <div class="action-buttons" id="button-events" data-title="Button Events">
+        <a  data-role="button" id="register"  data-click="logClick" class="km-primary km-justified transitions-button">Submit</a><br />
+        <a href="#components/profileView/view.html"  data-role="button" class="km-justified transitions-cancel">Cancel</a>
+       <div class="console"></div>
+           
+       </div>
+         
+    </div>
+<!-- END of registerView -->
+    
+    
     <div data-role="layout" data-id="main-nonav">
         <header data-role="header">
             <div data-role="navbar">
@@ -72,7 +209,33 @@
         kendoConsole.log(this.element.prop("id") + " was clicked!", false, "#button-events");
     }
 </script>
-     
+    <script> 
+     document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            console.log(device.cordova);
+            var model = device.model;
+            var devPlatform = device.platform;
+            var deviceID = device.uuid;
+            var deviceVersion = device.version;
+            var manu = device.manufacturer;
+            var deviceSerial = device.serial;
+
+            var devSpec = 'Model: ' + model + ' Platfrom: ' + devPlatform + ' Uuid: ' + deviceID + ' Version: ' + deviceVersion + ' Manufacturer: ' + manu + ' Serial: ' + deviceSerial;
+            document.getElementById("spec-banner").innerHTML = devSpec;
+            localStorage.setItem("deviceSpec", devSpec);
+
+             //cordova.dialogGPS("hello world",function(buttonIndex) {
+            //do something with the buttonIndex
+              // });
+           // getMacAdd();
+            
+         };
+       function getMacAdd(){
+           window.MacAddress.getMacAddress(
+          function(macAddress) {alert(macAddress);},function(fail) {alert(fail);}
+            );
+       }
+    </script>
     <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
 </body>
 

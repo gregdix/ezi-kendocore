@@ -1,21 +1,14 @@
 'use strict';
 
-app.profileView = kendo.observable({
+app.mapView = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
-app.localization.registerView('profileView');
+app.localization.registerView('mapView');
 
-// START_CUSTOM_CODE_contactsView
+// START_CUSTOM_CODE_mapView
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 (function () {
-    app.profileView.set('title', 'Profile');
-    
-    
-
-       
-    
-    
-    
+    app.mapView.set('title', 'Ezi-Maps');
 })();
-// END_CUSTOM_CODE_contactsView
+// END_CUSTOM_CODE_mapView

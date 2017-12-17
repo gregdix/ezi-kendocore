@@ -26,6 +26,7 @@
     "cordova-plugin-statusbar",
     "cordova-plugin-vibration",
     "cordova-plugin-whitelist",
-    "cordova-plugin-wkwebview-engine@1.1.1"
+    "cordova-plugin-wkwebview-engine@1.1.1",
+    "nl.x-services.plugins.actionsheet@2.3.3"
   ]
 }

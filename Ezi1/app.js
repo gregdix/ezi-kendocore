@@ -69,9 +69,10 @@
 
     app.isOnline = function() {
         if (!navigator || !navigator.connection) {
-            return true;
+            return true; alert("Online");
         } else {
             return navigator.connection.type !== 'none';
+            alert("Offline");
         }
     };
 

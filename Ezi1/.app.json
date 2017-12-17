@@ -35,11 +35,43 @@
     },
     {
       "type": "kendo-ui-mobile:view",
+      "name": "twitterView",
+      "components": [],
+      "title": "Twitter",
+      "addToNavigation": true,
+      "icon": "globe"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
       "name": "weatherView",
       "components": [],
       "title": "Weather",
       "addToNavigation": true,
       "icon": "globe"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "mapView",
+      "components": [],
+      "title": "Maps",
+      "addToNavigation": true,
+      "icon": "globe"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "remoteView",
+      "components": [],
+      "title": "News",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "mediaView",
+      "components": [],
+      "title": "Media",
+      "addToNavigation": true,
+      "icon": "play"
     },
     {
       "type": "kendo-ui-mobile:view",

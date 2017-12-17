@@ -1,0 +1,49 @@
+<div data-role="view" data-title="News" data-layout="main" data-model="app.remoteView" data-show="app.remoteView.onShow" data-after-show="app.remoteView.afterShow" id="remoteViewScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <a id="back-button" class="nav-button" data-align="left" data-role="backbutton">Back</a>
+            <span data-role="view-title"></span>
+            <a data-align="right" data-rel="popover" href="#popover-news" data-role="button" data-icon="more"></a>
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_settingsView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+     <!-- popover-->
+    <div data-role="popover" id="popover-news" data-popup='{"height": "22em", "width": "20em"}'>
+        <div data-role="view" data-title="Filter">
+            <div data-role="header">
+                <div data-role="navbar" class="km-light">
+                    <span data-role="view-title"></span>
+                    <a data-role="button" data-align="right" data-click="closeParentPopover" data-icon="close"></a>
+                </div>
+            </div>
+            <ul data-role="listview">
+                <li><label>Cat<input type="checkbox" onclick=""></label></li>
+                <li><label>LifeBstyle<input type="checkbox"></label></li>
+                <li><label>The c<input type="checkbox"></label></li>
+                <li><label>D<input type="checkbox"></label></li>
+                
+            </ul>
+        </div>
+    </div>
+    <!-- / popover -->
+     <script>
+        function closeParentPopover(e) {
+
+            var popover = e.sender.element.closest('[data-role=popover]').data('kendoMobilePopOver');
+
+            popover.close();
+        }
+    </script>
+    
+    <ul class="additional-icons km-widget km-listview km-list" data-role="listview" style="touch-action: pan-y;">
+        <li><span class="km-icon km-about"></span><a href="posts/index-premote.html" class="" data-role="listview-link">posts</a></li>
+        <li><span class="km-icon km-action"></span>action</li>
+        <li><span class="km-icon km-add"></span>add</li>
+        <li><span class="km-icon km-globe"></span><a href="components/weatherView/view.html" class="" data-role="listview-link">weather</a></li>
+        
+    </ul>
+    <!-- END_CUSTOM_CODE_settingsView -->
+</div>

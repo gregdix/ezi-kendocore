@@ -762,6 +762,63 @@ Fields
     opacity: 0.5;
 }
 
+/* MEDIA VIEW STYLES */
+.m-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url(../styles/images/sprite-weather-social.png);
+    background-repeat: no-repeat;
+}
+.m-icon.sunny { background-position: 0px 0px; }
+.m-icon.cloudy { background-position: 0px -32px; }
+.m-icon.partly-cloudy { background-position: 0px -64px; }
+.m-icon.partly-sunny { background-position: 0px -96px; }
+.m-icon.shower { background-position: 0px -128px; }
+.m-icon.foggy { background-position: 0px -160px; }
+.m-icon.storm { background-position: 0px -192px; }
+
+.m-item-template:after {
+    clear: both;
+}
+.m-item-template > .m-icon {
+    float: left;
+}
+.m-item-template > .m-date {
+    float: left;
+    margin: 0.5em 0 0 1em;
+}
+.m-item-template > .m-temp {
+    float: right;
+    margin-top: 0.2em;
+}
+.m-item-template > .m-temp > span:last-of-type {
+    opacity: 0.5;
+}
+
+.m-padless{
+    padding: .54em;
+}
+
+
+/* DEMO VIEW STYLES */
+.demo .button {
+    margin: 0 auto;
+    margin-bottom: 14px;
+    display: block;
+    width: 80%;
+}
+
+h3.hassubtitle {
+    margin-bottom: 0;
+}
+
+.subtitle {
+    color: #999;
+    font-size: 0.8em;
+    margin-left: 1rem;
+    margin-bottom: 0.8rem;
+}
+
 /* End Grid columns */
 
 

@@ -1,7 +1,7 @@
 <div data-role="view" data-title="View" data-layout="main" data-model="app.settingsView" data-show="app.settingsView.onShow" data-after-show="app.settingsView.afterShow" id="settingsViewScreen" class="screen">
     <header data-role="header">
         <div data-role="navbar" class="header-text">
-
+             <a id="back-button" class="nav-button" data-align="left" data-role="backbutton">Back</a>
             <span data-bind="text: strings.settingsView.title"></span>
 
         </div>
@@ -12,21 +12,25 @@
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
     <ul class="additional-icons km-widget km-listview km-list" data-role="listview" style="touch-action: pan-y;">
     <li><span class="km-icon km-about"></span><a href="posts/index-premote.html" class="" data-role="listview-link">posts</a></li>
+    
+    <li><span class="km-icon km-bookmarks"></span><a href="components/remoteView/view.html" class="" data-role="listview-link">News</a></li>
+    <li><span class="km-icon km-camera"></span><a href="components/mediaView/view.html" class="" data-role="listview-link">Media</a></li>
+    <li><span class="km-icon km-cart"></span><a href="components/mapView/view.html" class="" data-role="listview-link">Maps</a></li>
+    <li><span class="km-icon km-compose"></span><a href="components/twitterView/view.html" class="" data-role="listview-link">Twitter</a></li>
+    <li><span class="km-icon km-contacts"></span><a href="components/contactsView/view.html" class="" data-role="listview-link">contacts</a></li>
+    <li><span class="km-icon km-globe"></span><a href="components/weatherView/view.html" class="" data-role="listview-link">weather</a></li>
+    <li><span class="km-icon km-phone"></span><a href="bit6/ezichat.html" class="" data-role="listview-link">Chat</a></li>    
+    <li><span class="km-icon km-delete"></span>delete</li>
+     
     <li><span class="km-icon km-action"></span>action</li>
     <li><span class="km-icon km-add"></span>add</li>
-    <li><span class="km-icon km-bookmarks"></span>bookmarks</li>
-    <li><span class="km-icon km-camera"></span>camera</li>
-    <li><span class="km-icon km-cart"></span>cart</li>
-    <li><span class="km-icon km-compose"></span>compose</li>
-    <li><span class="km-icon km-contacts"></span><a href="components/contactsView/view.html" class="" data-role="listview-link">contacts</a></li>
-    <li><span class="km-icon km-delete"></span>delete</li>
     <li><span class="km-icon km-details"></span>details</li>
     <li><span class="km-icon km-downloads"></span>downloads</li>
     <li><span class="km-icon km-edit"></span>edit</li>
     <li><span class="km-icon km-fastforward"></span>fastforward</li>
     <li><span class="km-icon km-favorites"></span>favorites</li>
     <li><span class="km-icon km-featured"></span>featured</li>
-    <li><span class="km-icon km-globe"></span><a href="components/weatherView/view.html" class="" data-role="listview-link">weather</a></li>
+    
     <li><span class="km-icon km-history"></span>history</li>
     <li><span class="km-icon km-home"></span>home</li>
     <li><span class="km-icon km-info"></span>info</li>
@@ -36,7 +40,7 @@
     <li><span class="km-icon km-organize"></span>organize</li>
     <li><span class="km-icon km-pause"></span>pause</li>
     <li><span class="km-icon km-play"></span>play</li>
-    <li><span class="km-icon km-phone"></span><a href="bit6/ezichat.html" class="" data-role="listview-link">Chat</a></li>
+    
     <li><span class="km-icon km-recents"></span>recents</li>
     <li><span class="km-icon km-refresh"></span>refresh</li>
     <li><span class="km-icon km-reply"></span>reply</li>

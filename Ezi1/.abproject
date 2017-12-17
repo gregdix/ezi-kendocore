@@ -68,6 +68,7 @@
   ],
   "iOSDeploymentTarget": "6.0",
   "CorePlugins": [
-    "com.phonegap.plugins.sqlite@1.1.0"
+    "com.phonegap.plugins.sqlite@1.1.0",
+    "nl.x-services.plugins.actionsheet@2.3.3"
   ]
 }
